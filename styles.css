@@ -1,0 +1,81 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 26/05/2022, 06:40:40 PM
+    Author     : HP
+*/
+*{
+    margin: 0 auto;
+    font-weight: bolder;
+    font-family: monospace;
+    font-size: large
+}
+.background{
+    background-image: url(popcorn.jpg);
+    width: 100%;
+    height: 100vh;
+    position:relative;
+}
+.contenedor{
+    width: 20%;
+    height: fit-content;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:1em;
+    filter: blur(0);
+    background-color:#FEFFE2;
+
+}
+.tablero {
+    padding-top: 1rem;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0em;
+    border-top: 5px solid #611A0B;
+    border-bottom: 0px solid #000;
+    border-left: 0px solid #000;
+    border-right: 0px solid #000;
+}
+.celda {
+    border: 1.5px solid #611A0B;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #DA2906;
+    color:#ffffff;
+    padding:0.5em;
+    text-align: center;
+}
+.formulario{
+    display:flex;
+    padding-bottom: .5em;
+    padding-left: .5em;
+    padding-right: .5em;
+    padding-top: .8em;
+    justify-content: center;
+}
+.botones{
+    display:flex;
+    flex-direction: row;
+}
+input[type="submit"],input[type="reset"]{
+    background-color: #DA2906;
+    border: 1.5px solid #611A0B;
+    padding:0.3em;
+    color:#ffffff;
+    transition: .2s;
+    margin-top:.4em
+}
+.input{
+    display:flex;
+    padding: .5em;
+    justify-content: space-between
+}
+input[type="submit"]:hover,input[type="reset"]:hover{
+    background-color: #C62708;
+    cursor:pointer;
+    transition: .2s
+}
